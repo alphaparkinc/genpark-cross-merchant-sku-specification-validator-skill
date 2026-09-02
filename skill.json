@@ -1,0 +1,41 @@
+{
+  "name": "genpark-cross-merchant-sku-specification-validator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Cross-merchant SKU specification validator cross-referencing technical dimensions, power ratings, and compatibility constraints for agent shopping.",
+  "author": "genpark",
+  "category": "product-intelligence",
+  "tags": [
+    "sku-validator",
+    "product-specifications",
+    "hardware-compatibility",
+    "shopping-graph",
+    "warranty-verification"
+  ],
+  "inputs": {
+    "target_sku_identifier": {
+      "type": "string"
+    },
+    "intended_host_device": {
+      "type": "string"
+    },
+    "required_voltage_watts": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "validation_report_id": {
+      "type": "string"
+    },
+    "hardware_compatibility_verified": {
+      "type": "boolean"
+    },
+    "power_delivery_sufficient": {
+      "type": "boolean"
+    },
+    "specification_audit_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
